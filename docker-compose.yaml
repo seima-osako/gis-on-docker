@@ -1,0 +1,14 @@
+version: '3'
+services:
+  gis-work:
+    build: .
+    image: ${IMAGE_NAME}:${VERSION_TAG}
+    container_name: ${CONTAINER_NAME}
+    volumes:
+      - ./work/src:/work/src
+      - ./work/data:/work/data
+      - ./work/notebook:/work/notebook
+    expose:
+      - "8888"
+    ports:
+      - "127.0.0.1:8888:9999" # Jupyter Notebook用
