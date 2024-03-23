@@ -2,26 +2,20 @@
 name = "gis-work"
 version = "0.1.0"
 description = ""
-authors = [
-    "Seima Osako <s.ohsako@datafluct.com>",
-]
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [
-    { include = "src", from = "." },
-]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
 jupyter = "^1.0.0"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
 gdal = "3.6.2"
 geopandas = "^0.14.3"
+pdal = "^3.3.0"
 rasterio = "^1.3.9"
 rioxarray = "^0.15.1"
 richdem = "^0.3.4"
-pandas = "^2.2.1"
-numpy = "^1.26.4"
-pdal = "^3.3.0"
-
 
 [build-system]
 requires = ["poetry-core"]
